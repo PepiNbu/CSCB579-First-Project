@@ -5,6 +5,10 @@ namespace ToDoManagerApp.views;
 
 using System;
 
+//@author: Pepi Ivanov Zlatev
+//F. Number: F116665
+
+// Main form for the task management application.
 public class MainForm : Form, ITaskView
 {
     private TextBox? txtTitle;
@@ -32,6 +36,7 @@ public class MainForm : Form, ITaskView
         InitializeComponentCustom();
     }
 
+    // Custom initialization of UI components.
     private void InitializeComponentCustom()
     {
         //Window properties
@@ -100,8 +105,8 @@ public class MainForm : Form, ITaskView
     public string TitleInput => txtTitle?.Text!;
     public string DescriptionInput => txtDescription!.Text;
     public string SelectedPriority => cmbPriority!.SelectedItem?.ToString() ?? "Нормален";
-
-
+    
+    // Populates the input fields with the details of the specified task.
     public void PopulateInputs(ToDoTask? task)
     {
         if (task == null)
@@ -113,10 +118,11 @@ public class MainForm : Form, ITaskView
         txtDescription!.Text = task.Description;
         cmbPriority!.SelectedItem = task.Priority;
 
-        // switch button to save/edit mode
+        // Switch button to save/edit mode
         btnAdd!.Text = "Запази Промяната";
     }
 
+    // Clears the input fields and resets the form to add mode.
     public void ClearInputs()
     {
         txtTitle!.Clear();
@@ -124,13 +130,13 @@ public class MainForm : Form, ITaskView
         cmbPriority!.SelectedIndex = 1;
         txtTitle.Focus();
 
-        // restore add mode label
+        // Restore add mode label
         btnAdd!.Text = "Добави Задача";
     }
-
-
+    
     public ToDoTask? SelectedTask => lstTasks!.SelectedItem as ToDoTask;
 
+    // Sets the task list in the ListBox control.
     public void SetTaskList(IEnumerable<ToDoTask> tasks)
     {
         lstTasks!.BeginUpdate();
@@ -144,6 +150,7 @@ public class MainForm : Form, ITaskView
         lstTasks.EndUpdate();
     }
 
+    // Displays a message box with the specified message and caption.
     public void ShowMessage(string message, string caption = "Информация")
     {
         MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);

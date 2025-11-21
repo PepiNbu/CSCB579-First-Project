@@ -3,6 +3,10 @@
 using System;
 using System.Text.Json.Serialization;
 
+//@author: Pepi Ivanov Zlatev
+//F. Number: F116665
+
+// Model representing a to-do task.
 [method: JsonConstructor]
 public class ToDoTask(Guid id, string title, string description, string priority)
 {
@@ -15,7 +19,8 @@ public class ToDoTask(Guid id, string title, string description, string priority
     public ToDoTask(string title, string description, string priority) : this(Guid.NewGuid(), title, description, priority)
     {
     }
-
+    
+    // Returns a detailed string representation of the task.
     public string GetFullInfo()
     {
         return $"Заглавие: {Title}\nПриоритет: {Priority}\nДата: {CreatedAt}\nОписание: {Description}";

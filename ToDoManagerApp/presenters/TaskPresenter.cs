@@ -4,6 +4,10 @@ using ToDoManagerApp.services;
 
 namespace ToDoManagerApp.presenters;
 
+//@author: Pepi Ivanov Zlatev
+//F. Number: F116665
+
+// Presenter class for managing task-related interactions between the view and the service.
 public class TaskPresenter
 {
     private ToDoTask? taskBeingEdited;
@@ -25,12 +29,14 @@ public class TaskPresenter
         RefreshView();
     }
 
+    // Refreshes the task list in the view.
     private void RefreshView()
     {
         var tasks = service.GetAll();
         view.SetTaskList(tasks);
     }
 
+    // Handles the edit request event.
     private void OnEditRequested(object? sender, EventArgs e)
     {
         var selected = view.SelectedTask;
@@ -44,6 +50,7 @@ public class TaskPresenter
         view.PopulateInputs(selected);
     }
 
+    // Handles the add task request event.
     private void OnAddTaskRequested(object? sender, EventArgs e)
     {
         if (taskBeingEdited == null)
@@ -68,8 +75,8 @@ public class TaskPresenter
         RefreshView();
         view.ClearInputs();
     }
-
-
+    
+    // Handles the remove task request event.
     private void OnRemoveTaskRequested(object? sender, EventArgs e)
     {
         var selected = view.SelectedTask;
@@ -83,6 +90,7 @@ public class TaskPresenter
         RefreshView();
     }
 
+    // Handles the details request event.
     private void OnDetailsRequested(object? sender, EventArgs e)
     {
         var selected = view.SelectedTask;
@@ -95,6 +103,7 @@ public class TaskPresenter
         view.ShowMessage(selected.GetFullInfo(), "Детайли за задача");
     }
 
+    // Handles the save request event.
     private void OnSaveRequested(object? sender, EventArgs e)
     {
         try
@@ -108,6 +117,7 @@ public class TaskPresenter
         }
     }
 
+    // Handles the load request event.
     private void OnLoadRequested(object? sender, EventArgs e)
     {
         try

@@ -5,6 +5,9 @@ using ToDoManagerApp.views;
 
 namespace ToDoManagerApp;
 
+//@author: Pepi Ivanov Zlatev
+//F. Number: F116665
+
 internal static class Program
 {
     private static void Main()

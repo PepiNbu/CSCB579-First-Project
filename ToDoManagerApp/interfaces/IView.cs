@@ -5,6 +5,10 @@ namespace ToDoManagerApp.interfaces;
 using System;
 using System.Collections.Generic;
 
+//@author: Pepi Ivanov Zlatev
+//F. Number: F116665
+
+// Interface for the task management view.
 public interface ITaskView
 {
     string TitleInput { get; }

@@ -2,6 +2,10 @@
 
 namespace ToDoManagerApp.interfaces;
 
+//@author: Pepi Ivanov Zlatev
+//F. Number: F116665
+
+// Interface for managing task data storage and retrieval.
 public interface ITaskRepository
 {
     IEnumerable<ToDoTask> GetAll();
