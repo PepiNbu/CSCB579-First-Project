@@ -1,0 +1,14 @@
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\obj\Debug\net10.0-windows\ToDoManagerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\obj\Debug\net10.0-windows\ToDoManagerApp.AssemblyInfoInputs.cache
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\obj\Debug\net10.0-windows\ToDoManagerApp.AssemblyInfo.cs
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\obj\Debug\net10.0-windows\ToDoManagerApp.csproj.CoreCompileInputs.cache
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\bin\Debug\net10.0-windows\ToDoManagerApp.exe
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\bin\Debug\net10.0-windows\ToDoManagerApp.deps.json
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\bin\Debug\net10.0-windows\ToDoManagerApp.runtimeconfig.json
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\bin\Debug\net10.0-windows\ToDoManagerApp.dll
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\bin\Debug\net10.0-windows\ToDoManagerApp.pdb
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\obj\Debug\net10.0-windows\ToDoManagerApp.dll
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\obj\Debug\net10.0-windows\refint\ToDoManagerApp.dll
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\obj\Debug\net10.0-windows\ToDoManagerApp.pdb
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\obj\Debug\net10.0-windows\ToDoManagerApp.genruntimeconfig.cache
+C:\Users\User\RiderProjects\ToDoManagerApp\ToDoManagerApp\obj\Debug\net10.0-windows\ref\ToDoManagerApp.dll
